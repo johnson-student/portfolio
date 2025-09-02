@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Style CSS -->
-    <link rel="stylesheet" href="heading.css">
+    <link rel="stylesheet" href="style.css">
     <!-- Fonts -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Irish+Grover&display=swap" rel="stylesheet">
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>JOHNSON</title>
@@ -23,12 +23,12 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skill">Skill</a></li>
-                <li><a href="#achievement">Achievment</a></li>
+                <li><a href="#project">Project</a></li>
             </ul>
         </div>
         <div class="nav-btn">
             <i class="fa-solid fa-moon" id="darkmode-icon"></i>
-            <button class="contact-btn">Contact</button>
+            <input class="contact-btn" type="button" value="Contact">
             <i class="fa-solid fa-bars" id="menu-icon"></i>
         </div>
        <form class="form">
@@ -41,84 +41,111 @@
                 <input type="email" placeholder="Email" name="email">
                 <input type="tel" placeholder="Phone Number" name="phone">
             </div>
-            <input type="submit" value="Send" >
+            <button type="submit">Sent</button>
         </form>
     </nav>
     <header class="heading">
-        <div class="desciption">
-            <div class="text-area">
-                <h2 style="color:#666;">Hello, I'm</h2>
-                <h1 style="color:rgb(88, 226, 226)">NOB JOHNSON</h1>
-                <p >I'm a web developer</p>
-            </div>
-            <div class="contact-logo">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-telegram"></i>
-            </div>
-            <div class="heading-btn">
-                <button class="contact-btn">Contact Me</button>
-                <button><a href="MyCV.html">My CV</a></button>
-            </div>
+        <div class="intro">
+                <div class="text-area">
+                    <h2>HI, It's Me</h2>
+                    <h1>NOB JOHNSON</h1>
+                    <p >I'm a web developer...</p>
+                </div>
+                <div class="media-logo">
+                    <a href="https://www.facebook.com/share/15KatUXheq/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/johnson-student"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://t.me/nobjohnson"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+                <div class="heading-btn">
+                    <button class="contact-btn">Contact Me</button>
+                    <a href="MyCV.html"><button>My CV</button></a>
+                </div>
         </div>
         <div class="profile-pic">
-            <img src="image/ironman.jpg" alt="profile Picture">
+            <img src="image/myphoto.jpg" alt="profile Picture">
         </div>
     </header>
     <section class="container">
         <div class="about-me" id="about">
-            <div class="my-picture">
-                <img src="image/spiderman.jpg" alt="MY PIC">
+            
+            <div class="box fade-up">
+                <div class="image-box">
+                    <img src="./image/image2.jpg" alt="">
+                </div>
+                <div class="image-box">
+                    <img src="./image/image1.png" alt="">
+                </div>
             </div>
-            <div class="about-me-text">
+
+            <div class="about-me-text fade-up">
                 <h2>About <span>Me</span></h2>
-                <p style="color: rgb(129, 129, 241);">I'm a first-year student majoring in Computer Science at the CADT,
+                <span>I'm a first-year student majoring in Computer Science at the CADT,
                     specailizing in software Engineering.
-                </p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, maxime.Lorem molestiae accusamus. Sunt ad vero sint temporibus exercitationem facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, consequuntur odit. Quibusdam aperiam atque tempora, assumenda esse dolores. Velit, repellat?</p>
+                </span>
+                <p>Hi there, It's finally time to reveal the truth… I'm Spider-Man. 🕷️💻</p>
             </div>
         </div>
         <div class="skill" id="skill">
-            <div class="skill-text">
-                <h1>Tech <span>Skill</span></h1>
-                <p>Technology I have worked recently</p>
+            <div class="skill-text fade-up">
+                <h2 class="fade-up">Tech <span>Skill</span></h2>
+                <p class="fade-up">Technology I have worked recently</p>
             </div>
             <div class="language-logo">
-                <img src="image/C_Logo.png" alt="c logo">
-                <img src="image/html_logo.png" alt="html logo">
-                <img src="image/Css_logo.png" alt="css logo">
-                <img src="image/JavaScript-logo.png" alt="js logo">
+                <div class="language-box">
+                    <i class="fa-solid fa-c"></i>
+                    <p>C programming</p>
+                </div>
+                <div class="language-box">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="language-box">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="language-box">
+                    <i class="fa-brands fa-square-js"></i>
+                    <p>Javascript</p>
+                </div>
+                <div class="language-box">
+                    <img class="gpt-logo" src="image/ChatGPT-Logo.png" alt="">
+                    <p>ChatGPT</p>
+                </div>
+                <div class="language-box">
+                    <img src="image/deepseek-logo.png" alt="">
+                    <p>DeepSeek</p>
+                </div>
             </div>
         </div>
-        <div class="achievement" id="achievement">
-            <div class="achievement-text">
-                <h1><span>Achievement</span></h1>
-                <p>Thing I have built so far</p>
+        <div class="project-section" id="project">
+            <div class="project-heading">
+                <h2 class="fade-up">My <span>Project</span></h2>
+                <p class="fade-up">Thing I have built so far</p>
             </div>
             <div class="group-card">
                 <div class="card">
-                    <img src="image/ironman.jpg" alt="#">
-                    <h2>E-commerce</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam mollitia at similique iusto iure ratione omnis aut, vitae reiciendis dicta.</p>
-                    <button>View</button>
+                    <img src="image/project1.png" alt="#">
+                    <div class="detail">
+                        <h3>Calculator</h3>
+                        <p>To help user calculate number with arithmetic operator (+ , - , * , /) </p>
+                        <a href="https://johnson-student.github.io/Calculator/" target="_blank"><button>View</button></a>
+                    </div>
                 </div>
                 <div class="card">
-                    <img src="image/ironman.jpg" alt="#">
-                    <h2>E-commerce</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam mollitia at similique iusto iure ratione omnis aut, vitae reiciendis dicta.</p>
-                    <button>View</button>
+                    <img src="image/project2.png" alt="#">
+                    <div class="detail">
+                        <h3>Bacll calculator</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, iste.</p>
+                        <a href=" https://johnson-student.github.io/Bacll-Calculator/" target="_blank"><button>View</button></a>
+                    </div>
                 </div>
                 <div class="card">
-                    <img src="image/ironman.jpg" alt="#">
-                    <h2>E-commerce</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam mollitia at similique iusto iure ratione omnis aut, vitae reiciendis dicta.</p>
-                    <button>View</button>
-                </div>
-                <div class="card">
-                    <img src="image/ironman.jpg" alt="#">
-                    <h2>E-commerce</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam mollitia at similique iusto iure ratione omnis aut, vitae reiciendis dicta.</p>
-                    <button>View</button>
+                    <img src="image/project3.png" alt="#">
+                    <div class="detail">
+                        <h3>Converter Tool</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, iste.</p>
+                        <a href="https://johnson-student.github.io/Converter-Tool/" target="_blank"><button>View</button></a>
+                    </div>
                 </div>
             </div>
         </div>

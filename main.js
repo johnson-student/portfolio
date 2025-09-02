@@ -2,10 +2,10 @@ const contactBtns = document.querySelectorAll(".contact-btn");
 const contactForm = document.querySelector(".form");
 const darkmode = document.querySelector("#darkmode-icon");
 const navBar = document.querySelector(".navbar");
-const icon = document.querySelector("i");
 const manuIcon = document.querySelector("#menu-icon");
 const navLink = document.querySelector(".nav-link");
 const body = document.querySelector("body");
+
 
 body.addEventListener("click",function(e){
     contactForm.classList.remove("active");
@@ -34,19 +34,14 @@ function darkAndLightMode(e = "toggle") {
         document.body.classList.toggle("darkmode");
     } else if (e === "dark") {
         document.body.classList.add("darkmode");
+        
     } else if (e === "light") {
         document.body.classList.remove("darkmode");
     }
 
     if (document.body.classList.contains("darkmode")) {
-        navBar.style.backgroundColor = "#27292cff";
-        navBar.style.boxShadow = "0px 5px 50px white";
-        icon.style.color = "white";
         localStorage.setItem("theme", "dark");
     } else {
-        navBar.style.backgroundColor = "#fff";
-        navBar.style.boxShadow = "0px 5px 100px rgba(0,0,0,0.2)";
-        icon.style.color = "black";
         localStorage.setItem("theme", "light");
     }
 }
