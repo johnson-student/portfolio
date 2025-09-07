@@ -29,7 +29,7 @@ body{
 
 html,body{
     scroll-behavior: smooth;
-    scroll-padding-top: 12rem;
+    scroll-padding-top: 8rem;
 }
 
 .navbar{
@@ -76,6 +76,7 @@ html,body{
     margin-bottom: 1rem;
     color: var(--text-color);
     padding: 5px 10px;
+    font-size: 13px;
     border: 2px solid var(--primary-color);
     border-radius: 5px;
     outline: none;
@@ -161,7 +162,7 @@ i{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 14rem 0;
+    margin: 10rem 0;
     gap: 1rem;
     padding: 0 3rem;
 }
@@ -269,7 +270,7 @@ i{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 14rem;
+    gap: 8rem;
 }
 .about-me{
     display: flex;
@@ -401,7 +402,8 @@ span{
     position: relative;
     display: flex;
     flex-direction: column;
-    border: 2px solid var(--text-color);
+    border: 3px solid var(--primary-color);
+    color: white;
     border-radius: 10px;
     align-items: center;
     line-height: 25px;
@@ -437,9 +439,9 @@ span{
 }
 .card button{
     padding: 5px 20px;
-    background-color:#1E93AB ;
+    background-color:#67C090 ;
     border-radius: 10px;
-    border: 2px solid #1E93AB;
+    border: 2px solid #67C090;
     cursor: pointer;
 }
 .card button:hover{
@@ -465,6 +467,7 @@ footer{
     }
 }
 @media only screen and (max-width: 1000px){
+    
     .group-card{
         grid-template-columns: 1fr 1fr;
     }
@@ -558,6 +561,18 @@ footer{
     }
     .fade-up{
         animation-timeline: view(60% 0);
+    }
+}
+@media only screen and (max-width: 500px){
+    .logo{
+        font-size: 1.5rem;
+    }
+    .nav-btn .contact-btn{
+        width: 90px;
+        font-size: 1rem;
+    }
+    .navbar .active{
+        right: 1rem;
     }
 }
 ::placeholder{
